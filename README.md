@@ -35,16 +35,10 @@
 
 ## Features
 
-### Bidirectional Input Control
+### Input Control
 uDesk provides a unique two-way interaction model for mouse and keyboard inputs:
 * **Android to PC (Touchpad):** Use your Android device as a low-latency wireless touchpad. [cite_start]Movement and click data are transmitted directly to the PC via a dedicated UDP server[cite: 58, 60].
 * [cite_start]**PC to Android (Input Forwarding):** Press a configured hotkey on your PC to lock the system cursor (centering and hiding it)[cite: 17, 51]. [cite_start]All subsequent physical mouse movements and keyboard strokes are captured and forwarded directly to the Android device for remote typing and navigation[cite: 42, 46].
-
-<div align="center">
-  <img src="placeholder_input_mode.png" alt="Input Control Modes" width="750">
-  <br>
-  <i>Demonstration of the input forwarding state.</i>
-</div>
 
 ### JSON-Based Mod Editor (Macro Deck)
 [cite_start]Create custom control decks for your Android device using the built-in Mod Editor[cite: 273].
