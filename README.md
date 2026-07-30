@@ -72,12 +72,6 @@ Build custom control decks that show up as buttons on your Android device. See t
 * **App Launcher:** Add `.exe` executables, `.lnk` shortcuts, or folder/shell paths to the PC dashboard. They instantly show up on your Android device for one-tap remote launching.
 * **Advanced Audio Mixer:** Goes beyond a single master volume slider, since uDesk lists every active Windows audio session (per running app) so you can mute or adjust individual app volumes straight from your phone.
 
-<div align="center">
-  <img src="posters/audio_mixer.png" alt="Audio Mixer Placeholder" width="750">
-  <br>
-  <i>PLACEHOLDER: screenshot of the per-app audio mixer on Android.</i>
-</div>
-
 ### Dashboard Customization & Sync
 * **Android Wallpaper Setup:** Browse a local image on your PC; uDesk encodes and pushes it as the Android app's background, so both ends match visually.
 * **Media / URL Preview:** Paste an image or GIF URL on the PC dashboard to display it as a live widget on the Android side.
@@ -152,20 +146,8 @@ Click **`+ Add Button`** to append a new button to the deck. Each button has:
 | **▲ / ▼** | Reorders the button up or down within the deck. |
 | **✕** | Deletes the button. |
 
-<div align="center">
-  <img src="posters/button_editor.png" alt="Button Editor Placeholder" width="750">
-  <br>
-  <i>PLACEHOLDER: close-up of a single button's config panel.</i>
-</div>
-
 ### 3. Finding an icon
 Click **`Find SVG Icon`** in the sidebar to open the built-in **Lucide icon gallery**. Search by keyword, click any icon to copy its SVG code straight to your clipboard, then paste it into the button's SVG box. Icons are cached locally after the first download, so the gallery works offline afterward.
-
-<div align="center">
-  <img src="posters/lucide_gallery.png" alt="Lucide Gallery Placeholder" width="750">
-  <br>
-  <i>PLACEHOLDER: the Lucide icon search gallery.</i>
-</div>
 
 ### 4. Choosing what a button does
 Every button needs an **Action to Trigger**, selected from the dropdown:
