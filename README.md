@@ -53,7 +53,7 @@ uDesk provides a unique two-way interaction model for mouse and keyboard inputs:
 * [cite_start]**Visual Layout:** Reorder, edit, and manage your buttons in a clean interface, saving configurations as JSON files that sync instantly with the mobile app[cite: 348, 349].
 
 <div align="center">
-  <img src="placeholder_mod_editor.png" alt="Mod Editor Interface" width="750">
+  <img src="posters/mod_editor.png" alt="Mod Editor Interface" width="750">
   <br>
   <i>The built-in editor for creating custom macros and button layouts.</i>
 </div>
