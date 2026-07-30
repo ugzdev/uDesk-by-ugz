@@ -28,7 +28,7 @@
 <div align="center">
   <img src="posters/main_dashboard.png" alt="uDesk Main Dashboard" width="750">
   <br>
-  <i>Main server dashboard displaying active network status and configuration.</i>
+  <i>Main dashboard displaying active network info and other configurations.</i>
 </div>
 
 ---
@@ -74,10 +74,10 @@ uDesk provides a unique two-way interaction model for mouse and keyboard inputs:
 2. **Network Requirements:** Ensure both your PC and Android device are connected to the same local area network (LAN/Wi-Fi).
 3. **Pairing:**
    * [cite_start]The PC dashboard will display your automatically detected **Server IP** and a randomly generated **Security Token**[cite: 175, 176].
-   * Open the uDesk Android app, enter these credentials, and tap connect.
+   * Open the uDesk Android app, enter these credentials, and tap save.
 
 <div align="center">
   <img src="posters/pairing.png" alt="Pairing Process" width="750">
   <br>
-  <i>The automated IP and Security Token generation.</i>
+  <i>Pairing Process.</i>
 </div>
