@@ -4,7 +4,7 @@
   <h1>uDesk PC</h1>
 
   <p><b>A local network bridge connecting your Windows PC and Android device for remote control, system monitoring, and custom macro execution.</b></p>
-  <p><sub>Developed by <b>UGZ</b></sub></p>
+  <p><sub>Developed by <b>UGZ APP</b></sub></p>
 
   <br>
 
