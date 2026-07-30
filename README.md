@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="posters/app_icon_000.png" alt="uDesk Logo" width="110">
+  <img src="images/app_icon_000.png" alt="uDesk Logo" width="110">
 
   <h1>uDesk PC</h1>
 
@@ -32,7 +32,7 @@
 uDesk is a desktop server application built with **Python & PyQt5** that runs quietly in your system tray. Over your local network, it bridges your Windows PC and the uDesk Android app, giving you a live dashboard for hardware monitoring, two-way input control, media/clipboard sync, and a fully customizable JSON-based macro deck.
 
 <div align="center">
-  <img src="posters/main_dashboard.png" alt="uDesk Main Dashboard" width="750">
+  <img src="images/main_dashboard.png" alt="uDesk Main Dashboard" width="750">
   <br>
   <i>Main dashboard: server IP, security token, media/screenshot preview and app launcher.</i>
 </div>
@@ -62,7 +62,7 @@ uDesk provides a two-way input model between your PC and Android device:
 Build custom control decks that show up as buttons on your Android device. See the full **[Mod Editor guide](#mod-editor--custom-macro-deck)** below for a step-by-step walkthrough.
 
 <div align="center">
-  <img src="posters/mod_editor.png" alt="Mod Editor Interface" width="750">
+  <img src="images/mod_editor.png" alt="Mod Editor Interface" width="750">
   <br>
   <i>The built-in editor for creating custom macros and button layouts.</i>
 </div>
@@ -118,7 +118,7 @@ pycryptodome
 4. **Firewall:** On first launch, Windows Defender Firewall may prompt you to allow uDesk network access. Accept it, otherwise the Android app won't be able to reach the PC.
 
 <div align="center">
-  <img src="posters/pairing.png" alt="Pairing Process" width="750">
+  <img src="images/pairing.png" alt="Pairing Process" width="750">
   <br>
   <i>Pairing process.</i>
 </div>
