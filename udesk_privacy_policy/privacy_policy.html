@@ -1,53 +1,250 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - uDesk</title>
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 40px 20px;
-            background-color: #0d1117;
-            color: #c9d1d9;
-        }
-        h1, h2 { color: #58a6ff; }
-        a { color: #58a6ff; text-decoration: none; }
-        a:hover { text-decoration: underline; }
-        .footer { margin-top: 40px; font-size: 0.9em; color: #8b949e; border-top: 1px solid #30363d; padding-top: 20px; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy - uDesk</title>
+<style>
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+    color: #222;
+    line-height: 1.6;
+    font-size: 15px;
+  }
+  h1 {
+    font-size: 24px;
+    margin-bottom: 4px;
+  }
+  h2 {
+    font-size: 18px;
+    margin-top: 32px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 6px;
+  }
+  p, li {
+    font-size: 15px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 12px 0;
+    font-size: 14px;
+  }
+  th, td {
+    border: 1px solid #ccc;
+    padding: 8px 10px;
+    text-align: left;
+    vertical-align: top;
+  }
+  th {
+    background: #f2f2f2;
+  }
+  .meta {
+    color: #666;
+    font-size: 13px;
+    margin-bottom: 24px;
+  }
+  a {
+    color: #1a56db;
+  }
+</style>
 </head>
 <body>
 
-    <h1>Privacy Policy for uDesk</h1>
-    <p>Last updated: July 31, 2026</p>
+<h1>Privacy Policy for uDesk</h1>
+<p class="meta">Effective date: July 31, 2026<br>App name: uDesk<br>Package name: com.ugz.udesk</p>
 
-    <p>UGZ Apps built the uDesk app as an Open Source app. This SERVICE is provided by UGZ Apps at no cost and is intended for use as is.</p>
+<p>
+This Privacy Policy explains what information the uDesk Android application ("the app", "uDesk")
+collects, how it is used, and who it is shared with. By installing or using uDesk, you agree to the
+practices described in this policy.
+</p>
 
-    <h2>1. Information Collection and Use</h2>
-    <p>uDesk operates strictly within your local area network (LAN) to facilitate remote control between your Android device and Windows PC. The app does not collect, store, or transmit any personal data, account credentials, or telemetry to external servers.</p>
+<h2>1. What uDesk does</h2>
+<p>
+uDesk is a remote control app that connects to a computer on the same local Wi-Fi network. It lets you
+control mouse input, view media playback information, adjust volume, view a list of apps and shortcuts,
+see wallpaper images, browse the web with a built-in browser, and check the weather. uDesk does not
+require an account or login, and it does not use a cloud server. All connections happen directly between
+your phone and the paired computer over your local network.
+</p>
 
-    <h2>2. Permissions Required</h2>
-    <ul>
-        <li><strong>Network / Wi-Fi Access:</strong> Required to establish TCP/UDP socket connections between the Android app and the PC server.</li>
-        <li><strong>Camera / Device Sensors (if applicable):</strong> Any hardware tracking (e.g., gyroscope or camera input if implemented) is processed locally on the device in real-time and is never recorded or stored.</li>
-    </ul>
+<h2>2. Information we collect</h2>
+<table>
+  <tr>
+    <th>Data type</th>
+    <th>What it is</th>
+    <th>Why it is collected</th>
+    <th>Sent outside your device?</th>
+  </tr>
+  <tr>
+    <td>Location (coarse/fine)</td>
+    <td>Your device's approximate or precise location</td>
+    <td>Used only to get the current weather for your city from OpenWeatherMap</td>
+    <td>Yes, city name only, sent to OpenWeatherMap. Never sent to uDesk, since uDesk has no server.</td>
+  </tr>
+  <tr>
+    <td>Wi-Fi / network status</td>
+    <td>Whether your device is connected to Wi-Fi, and its local IP address</td>
+    <td>Needed to find and connect to your paired computer on the same network</td>
+    <td>No. Stays on your local network.</td>
+  </tr>
+  <tr>
+    <td>Touch and mouse input</td>
+    <td>Taps, swipes, and clicks you make in the app</td>
+    <td>Converted into mouse commands and sent to the paired computer</td>
+    <td>No. Sent only to your own paired computer over the local network.</td>
+  </tr>
+  <tr>
+    <td>Browsing history (in-app browser)</td>
+    <td>Web addresses, page titles, and icons visited in the app's built-in browser</td>
+    <td>Shown to you as your recent history inside the app</td>
+    <td>No. Stored only on your device.</td>
+  </tr>
+  <tr>
+    <td>Language setting</td>
+    <td>The interface language you choose</td>
+    <td>Used to show the app in your selected language</td>
+    <td>No. Stored only on your device.</td>
+  </tr>
+  <tr>
+    <td>Data from the paired computer</td>
+    <td>CPU/RAM/network usage, currently playing media, app list, volume level, wallpaper image</td>
+    <td>Displayed in the app so you can monitor and control your computer</td>
+    <td>No. Comes directly from your own computer to your own phone.</td>
+  </tr>
+  <tr>
+    <td>Security token</td>
+    <td>A code used to authenticate with the paired computer</td>
+    <td>Prevents other devices from sending commands to your computer</td>
+    <td>No. Sent only to your own paired computer.</td>
+  </tr>
+</table>
 
-    <h2>3. Security</h2>
-    <p>Connections between the mobile app and the PC server are secured using a local Security Token generated by the desktop client. Since no data leaves your local network, your information remains private within your personal environment.</p>
+<p>
+uDesk does not collect your name, email address, phone number, payment details, or any other information
+that could directly identify you. There is no account creation, login, or user profile in the app.
+</p>
 
-    <h2>4. Changes to This Privacy Policy</h2>
-    <p>We may update our Privacy Policy from time to time. Thus, you are advised to review this page periodically for any changes.</p>
+<h2>3. Permissions used by the app</h2>
+<table>
+  <tr>
+    <th>Permission</th>
+    <th>Purpose</th>
+  </tr>
+  <tr>
+    <td>INTERNET</td>
+    <td>To connect to the paired computer over the local network and to call the OpenWeatherMap API</td>
+  </tr>
+  <tr>
+    <td>ACCESS_NETWORK_STATE</td>
+    <td>To check network connectivity and manage reconnect attempts</td>
+  </tr>
+  <tr>
+    <td>ACCESS_WIFI_STATE</td>
+    <td>To detect the paired computer on the same Wi-Fi network</td>
+  </tr>
+  <tr>
+    <td>ACCESS_COARSE_LOCATION / ACCESS_FINE_LOCATION</td>
+    <td>Used only for the weather feature. Not used for any other purpose and not stored on any server.</td>
+  </tr>
+  <tr>
+    <td>WAKE_LOCK</td>
+    <td>Keeps the screen or CPU awake during an active remote control session</td>
+  </tr>
+  <tr>
+    <td>WRITE_SETTINGS</td>
+    <td>Allows the app to change certain device settings, such as screen brightness, when you request it</td>
+  </tr>
+</table>
+<p>
+You can review or turn off any of these permissions at any time from your device settings under
+Apps > uDesk > Permissions. Turning off location will only disable the weather feature.
+</p>
 
-    <h2>5. Contact Us</h2>
-    <p>If you have any questions or suggestions about this Privacy Policy, do not hesitate to contact us through our GitHub repository.</p>
+<h2>4. Local network communication</h2>
+<p>
+uDesk talks to the paired computer using a direct TCP connection (port 5050) and a UDP connection
+(port 5052), both on your local network. This connection is protected by a security token, so only your
+own paired computer can send or receive commands. No data from this connection passes through the
+internet, and no data is available to the developer of uDesk or to any third party.
+</p>
 
-    <div class="footer">
-        <p>&copy; 2026 UGZ Apps. Built with GitHub Pages.</p>
-    </div>
+<h2>5. Third party services</h2>
+<p>
+uDesk uses the OpenWeatherMap API (openweathermap.org) to show weather information. When you use this
+feature, your city name and an API key are sent to OpenWeatherMap. You can read their policy at
+<a href="https://openweathermap.org/privacy-policy" target="_blank" rel="noopener">openweathermap.org/privacy-policy</a>.
+</p>
+<p>
+uDesk does not use any advertising network, analytics SDK, tracking SDK, or crash reporting service, and
+does not collect an advertising ID. There are no ads in the app.
+</p>
+
+<h2>6. Where data is stored</h2>
+<p>
+uDesk does not have its own server or database. Any data that is saved (browsing history, language
+setting, other preferences) is stored only on your device, using Android's local storage. This data
+is deleted when you clear the app's data or uninstall the app. If Android's automatic backup is turned
+on for your device, this local data may be included in your own Google account backup, which is managed
+by Android, not by uDesk.
+</p>
+
+<h2>7. Data sharing</h2>
+<p>
+uDesk does not sell your data and does not share it with third parties for advertising or marketing.
+Data is only shared in these cases:
+</p>
+<ul>
+  <li>With your own paired computer, over your local network, so the app can work</li>
+  <li>With OpenWeatherMap, limited to a city name, for the weather feature</li>
+  <li>If required by law, such as a valid request from a court or government authority</li>
+</ul>
+
+<h2>8. Security</h2>
+<p>
+Commands sent to the paired computer require a security token, so unauthorized devices cannot control
+it. If the connection drops, the app retries with increasing delays instead of repeatedly hammering the
+connection. The built-in browser shows whether a page is using a secure (HTTPS) connection. No data
+leaves your local network except the OpenWeatherMap request described above. No method of transmission
+or storage is completely secure, and we cannot guarantee absolute security.
+</p>
+
+<h2>9. Children's privacy</h2>
+<p>
+uDesk is not directed at children under 13 and does not knowingly collect personal data from them. If
+you believe a child has provided us with personal data, please contact us using the information below
+and we will review and remove it.
+</p>
+
+<h2>10. Your rights</h2>
+<p>
+Depending on where you live, you may have rights under laws such as the GDPR (EU), CCPA/CPRA
+(California), or KVKK (Turkey), including the right to know what data is processed, request access,
+request correction, request deletion, and object to processing. Because uDesk does not store personal
+data on any server, most of these actions can be done directly on your device: clear the app's browsing
+history in-app, clear app data from Settings > Apps > uDesk > Storage, or uninstall the app to remove all
+local data. For any other request, contact us using the details in section 12.
+</p>
+
+<h2>11. Changes to this policy</h2>
+<p>
+We may update this Privacy Policy from time to time to reflect changes in the app or in legal
+requirements. The "Effective date" at the top of this page will be updated whenever changes are made.
+We recommend checking this page occasionally.
+</p>
+
+<h2>12. Contact</h2>
+<p>
+If you have questions about this Privacy Policy, contact us at:
+</p>
+<p>
+Developer: UGZ<br>
+Email: <a href="mailto:ugz.oyun@gmail.com">support@example.com</a>
+</p>
 
 </body>
 </html>
