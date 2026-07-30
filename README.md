@@ -56,12 +56,6 @@ uDesk provides a unique two-way interaction model for mouse and keyboard inputs:
 * [cite_start]**App Launcher:** Add `.exe` executables or `.lnk` shortcuts to the PC dashboard[cite: 190, 200]. [cite_start]These appear on your Android device for one-tap remote launching[cite: 112, 114].
 * [cite_start]**Advanced Audio Mixer:** Not just a master volume slider. uDesk fetches active Windows audio sessions, allowing you to mute or adjust the volume of individual background applications directly from your phone[cite: 124, 129].
 
-<div align="center">
-  <img src="placeholder_app_launcher.png" alt="App Launcher and Mixer" width="750">
-  <br>
-  <i>Managing remote applications and per-app audio levels.</i>
-</div>
-
 ### Dashboard Customization & Sync
 * [cite_start]**Android Wallpaper Setup:** Browse and select a local image on your PC; uDesk encodes it and sets it as the background for your Android application to maintain your aesthetic[cite: 173, 189].
 * [cite_start]**Media / URL Preview:** Paste an image or GIF URL into the PC server to display it as a custom widget on your Android dashboard[cite: 171, 185].
@@ -71,12 +65,6 @@ uDesk provides a unique two-way interaction model for mouse and keyboard inputs:
 * [cite_start]**Screen Capture Snipping:** Use the built-in frameless snipping tool to capture a specific area of your PC screen[cite: 154]. [cite_start]The captured image is immediately sent and displayed on your Android device[cite: 158].
 * [cite_start]**System Monitoring:** Streams real-time CPU usage, RAM allocation, and Network bandwidth (Mbps) to the connected mobile client[cite: 78, 80].
 * [cite_start]**Clipboard Synchronization:** Automatically detects changes in your PC's clipboard and pushes them to Android, while also accepting clipboard data pasted from the mobile app[cite: 93, 132].
-
-<div align="center">
-  <img src="placeholder_snipping_tool.png" alt="Snipping Tool" width="750">
-  <br>
-  <i>Capturing a custom screen region to send to the mobile device.</i>
-</div>
 
 ---
 
@@ -89,7 +77,7 @@ uDesk provides a unique two-way interaction model for mouse and keyboard inputs:
    * Open the uDesk Android app, enter these credentials, and tap connect.
 
 <div align="center">
-  <img src="placeholder_pairing.png" alt="Pairing Process" width="750">
+  <img src="posters/pairing.png" alt="Pairing Process" width="750">
   <br>
   <i>The automated IP and Security Token generation.</i>
 </div>
