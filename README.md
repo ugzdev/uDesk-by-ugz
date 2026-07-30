@@ -35,7 +35,7 @@ uDesk is a desktop server application built with **Python & PyQt5** that runs qu
 <div align="center">
   <img src="posters/main_dashboard.png" alt="uDesk Main Dashboard" width="750">
   <br>
-  <i>Main dashboard — server IP, security token, media/screenshot preview and app launcher.</i>
+  <i>Main dashboard: server IP, security token, media/screenshot preview and app launcher.</i>
 </div>
 
 ---
@@ -45,7 +45,7 @@ uDesk is a desktop server application built with **Python & PyQt5** that runs qu
 - [Features](#features)
 - [Requirements](#requirements)
 - [Setup & Connection](#setup--connection)
-- [Mod Editor — Custom Macro Deck](#mod-editor--custom-macro-deck)
+- [Mod Editor: Custom Macro Deck](#mod-editor--custom-macro-deck)
 - [Ports & Security](#ports--security)
 - [Troubleshooting](#troubleshooting)
 
@@ -57,7 +57,7 @@ uDesk is a desktop server application built with **Python & PyQt5** that runs qu
 uDesk provides a two-way input model between your PC and Android device:
 
 * **Android → PC (Touchpad):** Use your Android device as a low-latency wireless touchpad. Movement and click data are streamed straight to the PC over a dedicated UDP socket, so there's no noticeable lag.
-* **PC → Android (Input Forwarding):** Press **`Ctrl + Shift + Alt`** anywhere on your PC to instantly lock the system cursor — it gets centered and hidden — and every further mouse movement, scroll, and keystroke is captured and forwarded live to the Android app. This turns your phone into a remote keyboard/mouse for the PC. Press the same hotkey again to release control and give your PC's input back to Windows.
+* **PC → Android (Input Forwarding):** Press **`Ctrl + Shift + Alt`** anywhere on your PC to instantly lock the system cursor (it gets centered and hidden), and every further mouse movement, scroll, and keystroke is captured and forwarded live to the Android app. This turns your phone into a remote keyboard/mouse for the PC. Press the same hotkey again to release control and give your PC's input back to Windows.
 
 ### JSON-Based Mod Editor (Macro Deck)
 Build custom control decks that show up as buttons on your Android device. See the full **[Mod Editor guide](#mod-editor--custom-macro-deck)** below for a step-by-step walkthrough.
@@ -70,18 +70,24 @@ Build custom control decks that show up as buttons on your Android device. See t
 
 ### Application & Media Management
 * **App Launcher:** Add `.exe` executables, `.lnk` shortcuts, or folder/shell paths to the PC dashboard. They instantly show up on your Android device for one-tap remote launching.
-* **Advanced Audio Mixer:** Goes beyond a single master volume slider — uDesk lists every active Windows audio session (per running app) so you can mute or adjust individual app volumes straight from your phone.
+* **Advanced Audio Mixer:** Goes beyond a single master volume slider, since uDesk lists every active Windows audio session (per running app) so you can mute or adjust individual app volumes straight from your phone.
+
+<div align="center">
+  <img src="posters/audio_mixer.png" alt="Audio Mixer Placeholder" width="750">
+  <br>
+  <i>PLACEHOLDER: screenshot of the per-app audio mixer on Android.</i>
+</div>
 
 ### Dashboard Customization & Sync
 * **Android Wallpaper Setup:** Browse a local image on your PC; uDesk encodes and pushes it as the Android app's background, so both ends match visually.
 * **Media / URL Preview:** Paste an image or GIF URL on the PC dashboard to display it as a live widget on the Android side.
-* **Live Media Sync:** Automatically detects the currently playing media title, artist, and album art via the Windows System Media Transport Controls API and pushes it to your phone in real time — includes play/pause, next, and previous controls.
+* **Live Media Sync:** Automatically detects the currently playing media title, artist, and album art via the Windows System Media Transport Controls API and pushes it to your phone in real time, with play/pause, next, and previous controls included.
 
 ### Utilities & Productivity
 * **Screen Capture Snipping:** A frameless, click-and-drag snipping tool captures any region of your screen and sends it straight to your Android device.
 * **System Monitoring:** Streams live CPU usage, RAM allocation, and network throughput (Mbps) to the mobile client roughly every 1.5 seconds.
 * **Clipboard Synchronization:** Detects PC clipboard changes and pushes them to Android automatically, and also accepts clipboard text pasted from the mobile app back onto the PC.
-* **System Tray Integration:** uDesk minimizes to the system tray instead of closing, so the server keeps running in the background — double-click the tray icon to bring the dashboard back.
+* **System Tray Integration:** uDesk minimizes to the system tray instead of closing, so the server keeps running in the background. Double-click the tray icon to bring the dashboard back.
 
 ---
 
@@ -105,18 +111,18 @@ pyperclip
 pycryptodome
 ```
 
-> ⚠️ Both `keyboard` and the cursor-lock features register global, low-level hooks and require the app to run **with administrator privileges** on most systems — otherwise hotkeys or forwarded keystrokes may silently fail.
+> ⚠️ Both `keyboard` and the cursor-lock features register global, low-level hooks and require the app to run **with administrator privileges** on most systems, otherwise hotkeys or forwarded keystrokes may silently fail.
 
 ---
 
 ## Setup & Connection
 
-1. **Run the Server:** Launch the `uDesk` executable (or `uDesk.pyw` from source) on your Windows machine. It opens the dashboard and also drops an icon in your system tray — closing the window just minimizes it there, the server keeps running until you quit it from the tray menu.
+1. **Run the Server:** Launch the `uDesk` executable (or `uDesk.pyw` from source) on your Windows machine. It opens the dashboard and also drops an icon in your system tray. Closing the window just minimizes it there, and the server keeps running until you quit it from the tray menu.
 2. **Network Requirements:** Make sure both your PC and Android device are connected to the **same local network (LAN/Wi-Fi)**. uDesk does not work over the internet or across different networks/VPNs.
 3. **Pairing:**
    * The dashboard displays your automatically detected **Server IP** and a randomly generated 6-character **Security Token** (regenerated once per install, stored locally).
    * Open the uDesk Android app, enter both values, and tap save.
-4. **Firewall:** On first launch, Windows Defender Firewall may prompt you to allow uDesk network access — accept it, otherwise the Android app won't be able to reach the PC.
+4. **Firewall:** On first launch, Windows Defender Firewall may prompt you to allow uDesk network access. Accept it, otherwise the Android app won't be able to reach the PC.
 
 <div align="center">
   <img src="posters/pairing.png" alt="Pairing Process" width="750">
@@ -126,40 +132,52 @@ pycryptodome
 
 ---
 
-## Mod Editor — Custom Macro Deck
+## Mod Editor: Custom Macro Deck
 
 The **Mod Editor** is a separate window used to design the button decks ("mods") that appear on your Android app. Open it by clicking the **`MODS`** button in the top-right corner of the main uDesk dashboard.
 
 ### 1. Creating a mod
 * Click **`+ New Mod`** in the left sidebar to start a blank deck, or select an existing `.json` file from the list to edit it.
-* Give it a **File Name** (saved as `mods/your_name.json`) and a display **Title** — this title is what shows up as the deck's name inside the Android app.
+* Give it a **File Name** (saved as `mods/your_name.json`) and a display **Title**, which is what shows up as the deck's name inside the Android app.
 
 ### 2. Adding and configuring buttons
 Click **`+ Add Button`** to append a new button to the deck. Each button has:
 
 | Field | What it does |
 |---|---|
-| **Type** | `Title` shows the button's text label; `Icon (SVG)` shows a vector icon instead — paste raw `<svg>...</svg>` code into the box below. |
+| **Type** | `Title` shows the button's text label; `Icon (SVG)` shows a vector icon instead, pasted as raw `<svg>...</svg>` code into the box below. |
 | **LED Indicator** | Marks this button as a toggle/status button. If its action returns an on/off state (e.g. mute status), Android lights up an indicator dot on the button. |
 | **Button title** | The label shown when using `Title` type, and the tooltip/name used elsewhere. |
-| **ID** | A unique identifier (`btn_1`, `btn_2`...) used internally to match the button to its action — keep these unique within a mod. |
+| **ID** | A unique identifier (`btn_1`, `btn_2`...) used internally to match the button to its action, so keep these unique within a mod. |
 | **▲ / ▼** | Reorders the button up or down within the deck. |
 | **✕** | Deletes the button. |
+
+<div align="center">
+  <img src="posters/button_editor.png" alt="Button Editor Placeholder" width="750">
+  <br>
+  <i>PLACEHOLDER: close-up of a single button's config panel.</i>
+</div>
 
 ### 3. Finding an icon
 Click **`Find SVG Icon`** in the sidebar to open the built-in **Lucide icon gallery**. Search by keyword, click any icon to copy its SVG code straight to your clipboard, then paste it into the button's SVG box. Icons are cached locally after the first download, so the gallery works offline afterward.
 
+<div align="center">
+  <img src="posters/lucide_gallery.png" alt="Lucide Gallery Placeholder" width="750">
+  <br>
+  <i>PLACEHOLDER: the Lucide icon search gallery.</i>
+</div>
+
 ### 4. Choosing what a button does
 Every button needs an **Action to Trigger**, selected from the dropdown:
 
-1. **System Control** — pick a built-in system command: Mute/Unmute Audio, Mute/Unmute Microphone, Sleep, Lock, Shut Down, or Restart.
-2. **Trigger Shortcut** — fires a keyboard shortcut on the PC, e.g. `ctrl+shift+s`. Use the same syntax as the Python `keyboard` library (keys joined with `+`).
-3. **Open App/Folder** — browse and pick any executable, shortcut, or folder path; pressing the button launches it remotely.
-4. **Open Website** — opens a URL in your choice of browser (Default, Chrome, Edge, Opera, Firefox), with an option to open it in a private/incognito window.
-5. **Play Audio** — plays a sound file from the local `sounds/` folder on the PC (drop your `.mp3`/`.wav` files there, then hit **Refresh** in the dropdown to pick them up).
+1. **System Control:** pick a built-in system command: Mute/Unmute Audio, Mute/Unmute Microphone, Sleep, Lock, Shut Down, or Restart.
+2. **Trigger Shortcut:** fires a keyboard shortcut on the PC, e.g. `ctrl+shift+s`. Use the same syntax as the Python `keyboard` library (keys joined with `+`).
+3. **Open App/Folder:** browse and pick any executable, shortcut, or folder path; pressing the button launches it remotely.
+4. **Open Website:** opens a URL in your choice of browser (Default, Chrome, Edge, Opera, Firefox), with an option to open it in a private/incognito window.
+5. **Play Audio:** plays a sound file from the local `sounds/` folder on the PC (drop your `.mp3`/`.wav` files there, then hit **Refresh** in the dropdown to pick them up).
 
 ### 5. Saving and syncing to Android
-* Click **`Save (JSON)`** to write the mod to disk. This is what actually persists your changes — closing the editor without saving discards them.
+* Click **`Save (JSON)`** to write the mod to disk. This is what actually persists your changes, so closing the editor without saving discards them.
 * Back on the main uDesk dashboard, click **`Sync`** to push the updated mods, apps, and wallpaper to your connected Android device immediately, instead of waiting for its next automatic refresh.
 * To remove a mod entirely, hover over it in the sidebar list and click the **✕** next to its name.
 
@@ -167,21 +185,21 @@ Every button needs an **Action to Trigger**, selected from the dropdown:
 
 ## Ports & Security
 
-uDesk opens the following local ports — make sure your firewall/router doesn't block them on your LAN:
+uDesk opens the following local ports, so make sure your firewall/router doesn't block them on your LAN:
 
 | Port | Protocol | Purpose |
 |---|---|---|
-| `5050` | TCP | Main data channel — system stats, media info, clipboard, mods, app control, run commands |
+| `5050` | TCP | Main data channel: system stats, media info, clipboard, mods, app control, run commands |
 | `5051` | HTTP | Browser-extension bridge (media/URL widgets sent from a companion browser extension) |
-| `5052` | UDP | Touchpad channel — low-latency mouse movement/click packets from Android |
+| `5052` | UDP | Touchpad channel: low-latency mouse movement/click packets from Android |
 
-Every request must include the **Security Token** shown on the dashboard; requests with a missing or incorrect token are rejected. Because there's no additional transport encryption, treat uDesk as a **trusted-LAN-only** tool — don't expose these ports to the public internet or untrusted networks (e.g. public Wi-Fi, port-forwarding through your router).
+Every request must include the **Security Token** shown on the dashboard; requests with a missing or incorrect token are rejected. Because there's no additional transport encryption, treat uDesk as a **trusted-LAN-only** tool, and don't expose these ports to the public internet or untrusted networks (e.g. public Wi-Fi, port-forwarding through your router).
 
 ---
 
 ## Troubleshooting
 
 * **Android app can't find the PC:** Confirm both devices are on the same Wi-Fi network (not on a guest network or separate VLAN), and that Windows Firewall has allowed uDesk through.
-* **Hotkeys / forwarded keystrokes don't work:** Run uDesk as Administrator — global keyboard hooks on Windows generally require elevated privileges.
+* **Hotkeys / forwarded keystrokes don't work:** Run uDesk as Administrator, since global keyboard hooks on Windows generally require elevated privileges.
 * **Audio mixer shows no apps:** Only apps with an active audio session appear; open/play something in the app first.
-* **Added app doesn't launch:** Re-check the path in the App Launcher — moved or renamed executables/shortcuts will fail silently.
+* **Added app doesn't launch:** Re-check the path in the App Launcher, since moved or renamed executables/shortcuts will fail silently.
