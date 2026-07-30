@@ -1,7 +1,7 @@
 <div align="center">
   <img src="posters/app_icon_000.png" alt="uDesk Logo" width="120">
   
-  <h1>uDesk Server</h1>
+  <h1>uDesk PC</h1>
   
   <p><b>A local network bridge connecting your Windows PC and Android device for advanced remote control, system monitoring, and custom macro execution.</b></p>
   <p><i>Developed by UGZ Apps</i></p>
