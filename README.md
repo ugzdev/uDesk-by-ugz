@@ -1,51 +1,59 @@
-# uDesk
-
-> Transform Your Android Device into a Powerful PC Management Center
-
-[![Get it on Google Play](https://img.shields.io/badge/Google_Play-uDesk-4285F4?style=for-the-badge&logo=google-play&logoColor=white)](https://play.google.com/store/apps/details?id=com.ugz.udesk)
-[![Download Latest Release](https://img.shields.io/badge/GitHub_Release-Download_APK-232F3E?style=for-the-badge&logo=github&logoColor=white)](https://github.com/YOUR_USERNAME/udesk/releases/latest)
-[![Made with Kotlin](https://img.shields.io/badge/Built_with-Kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white)](#)
-
----
-
-## ❖ About the Project
-
-uDesk is a modern, lightweight Android launcher application custom-built to manage and control your computer remotely over your local network. Built entirely with Kotlin, uDesk bypasses the clutter of traditional remote apps to offer a sleek, gesture-driven launcher experience that puts complete PC management right at your fingertips.
-
-## ❖ Key Features
-
-✦ **Real-Time Remote Control**
-Experience seamless, low-latency control over your PC. Execute commands, manage power states, and navigate your computer effortlessly.
-
-✦ **Modern Launcher Interface**
-Not just a utility app, but a fully functional Android launcher. Clean aesthetics, zero bloatware, and intuitive navigation tailored for power users.
-
-✦ **Process & File Management**
-Access your computer's file system, monitor running background processes, and manage system resources directly from your mobile dashboard.
-
-✦ **Secure Local Connection**
-Your data stays on your network. uDesk establishes a secure, private bridge between your Android device and your PC without relying on third-party cloud servers.
-
-✦ **Optimized Performance**
-Engineered for minimum battery consumption and maximum stability. uDesk runs quietly in the background without draining your device's resources.
-
-## ❖ Installation
-
-Choose the installation method that works best for you:
-
-### 1. Google Play Store (Recommended)
-For the most stable experience and automatic updates, download uDesk directly from the Play Store by clicking the **Google Play** badge at the top of this page.
-
-### 2. GitHub Releases (Manual APK Install)
-For beta builds, developer previews, or manual sideloading, click the **GitHub Release** badge above to download the latest `.apk` file. 
-
-## ❖ Technical Specifications
-
-* **Language:** Kotlin
-* **Framework:** Android SDK
-* **Package Name:** `com.ugz.udesk`
-* **Architecture:** Modern Android Architecture (MVVM)
+<div align="center">
+  <h1>uDesk PC Server</h1>
+  <p><b>The official desktop companion for the uDesk remote management ecosystem.</b></p>
+  <p>
+    <a href="README-tr.md">Türkçe Dokümantasyon</a>
+  </p>
+</div>
 
 ---
 
-**Developed by UGZ Apps**
+## Overview
+
+uDesk is a comprehensive remote computer management and launcher system. While the mobile application serves as your primary control center, this repository hosts the PC-side server application. It operates silently in the background, bridging the connection between your mobile device and your desktop environment to execute commands, manage tasks, and monitor system performance securely.
+
+## Core Features
+
+### PC Companion App (This Repository)
+* **Seamless Connectivity:** Establishes a secure, low-latency connection with the mobile client over your local network.
+* **Minimal Footprint:** Designed to run in the background with near-zero impact on system resources.
+* **Process & Task Management:** Grants the ability to remotely monitor active processes, terminate tasks, and launch applications.
+* **System Controls:** Enables remote power management including shutdown, restart, and sleep commands.
+
+### Mobile Application (Available on Google Play)
+* **Intuitive Interface:** A clean, modern launcher design providing quick access to PC controls and shortcuts.
+* **Real-time Telemetry:** View live PC hardware statistics and performance metrics directly from your phone.
+* **Custom Shortcuts:** Pin frequent actions and custom scripts for one-tap execution.
+
+## Downloads & Installation
+
+To experience the full ecosystem, you need to install both the desktop server and the mobile application.
+
+### 1. Mobile Client (Android)
+Download the remote control and launcher application directly from the Google Play Store.
+
+**Download:** [uDesk on Google Play](https://play.google.com/store/apps/details?id=com.ugz.udesk)
+
+### 2. Desktop Server (Windows/Linux)
+Download the latest executable for your computer to start receiving commands from your mobile device.
+
+**Download:** [Latest PC Server Release](https://github.com/UGZ/uDesk/releases/latest)
+
+## Setup Guide
+
+1. Download the latest `.zip` or `.exe` file from the Releases page.
+2. Extract the contents to your preferred directory.
+3. Run the PC Server application.
+4. Note the IP address and Port displayed on the application window.
+5. Ensure your operating system's firewall allows the application to communicate over the network.
+6. Open the uDesk Android application, navigate to the connection settings, and enter the displayed IP and Port.
+
+## License
+
+This project is licensed under the MIT License. See the `LICENSE` file for more details.
+
+---
+
+<div align="center">
+  <b>Developed by UGZ Apps</b>
+</div>
