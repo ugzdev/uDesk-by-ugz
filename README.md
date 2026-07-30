@@ -26,7 +26,7 @@
 [cite_start]uDesk is a comprehensive desktop server application built with Python and PyQt5[cite: 1, 2]. It operates over your local network to establish a seamless connection between your Android device and Windows PC. [cite_start]Designed with a modern, dark-themed UI[cite: 212, 213], it provides a centralized dashboard for hardware monitoring, bidirectional input control, and highly customizable macro management.
 
 <div align="center">
-  <img src="udesk_boards/main_dashboard.png" alt="uDesk Main Dashboard" width="750">
+  <img src="posters/main_dashboard.png" alt="uDesk Main Dashboard" width="750">
   <br>
   <i>Main server dashboard displaying active network status and configuration.</i>
 </div>
