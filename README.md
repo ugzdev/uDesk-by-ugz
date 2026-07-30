@@ -20,7 +20,6 @@
   <p>
     <img src="https://img.shields.io/badge/platform-Windows%2010%2F11-blue?style=flat-square">
     <img src="https://img.shields.io/badge/python-3.9%2B-3776AB?style=flat-square&logo=python&logoColor=white">
-    <img src="https://img.shields.io/badge/license-MIT-lightgrey?style=flat-square">
   </p>
 </div>
 
