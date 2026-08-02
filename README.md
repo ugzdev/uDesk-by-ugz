@@ -51,7 +51,7 @@ uDesk is a local network bridge between your Windows PC and your Android device,
 - [Features](#features)
 - [Requirements](#requirements)
 - [Setup & Connection](#setup--connection)
-- [Mod Editor: Custom Macro Deck](#mod-editor--custom-macro-deck)
+- [Mod Editor: Custom Macro Deck](#mod-editor-custom-macro-deck)
 - [Ports & Security](#ports--security)
 - [Troubleshooting](#troubleshooting)
 
