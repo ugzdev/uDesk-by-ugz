@@ -29,7 +29,7 @@
 
 ## What's uDesk?
 
-uDesk is a powerful desktop server application that acts as a local network bridge between your Windows PC and Android device. Running quietly in your system tray, it transforms your phone into a comprehensive remote control hub. Whether you need a low-latency wireless touchpad, a live system hardware monitor, two-way media and clipboard synchronization, or a fully customizable JSON-based macro deck to launch apps and execute shortcuts, uDesk brings your PC's controls right to your fingertips.
+uDesk is a local network bridge between your Windows PC and your Android device, made up of a Windows server app running quietly in your system tray and a companion Android app that turns your phone into a full remote control hub. Together they give you a low-latency wireless touchpad and remote keyboard, live CPU/RAM/network monitoring, per-app audio mixing, two-way clipboard sync, live media playback sync with playback controls, remote app/website launching, screen capture streaming, and a fully customizable JSON-based macro deck (built with the desktop Mod Editor) that shows up as tappable button decks on your phone.
 
 <div align="center">
   <table>
@@ -64,15 +64,6 @@ uDesk provides a two-way input model between your PC and Android device:
 
 * **Android → PC (Touchpad):** Use your Android device as a low-latency wireless touchpad. Movement and click data are streamed straight to the PC over a dedicated UDP socket, so there's no noticeable lag.
 * **PC → Android (Input Forwarding):** Press **`Ctrl + Shift + Alt`** anywhere on your PC to instantly lock the system cursor (it gets centered and hidden), and every further mouse movement, scroll, and keystroke is captured and forwarded live to the Android app. This turns your phone into a remote keyboard/mouse for the PC. Press the same hotkey again to release control and give your PC's input back to Windows.
-
-### JSON-Based Mod Editor (Macro Deck)
-Build custom control decks that show up as buttons on your Android device. See the full **[Mod Editor guide](#mod-editor--custom-macro-deck)** below for a step-by-step walkthrough.
-
-<div align="center">
-  <img src="images/mod_editor.png" alt="Mod Editor Interface" width="750">
-  <br>
-  <i>The built-in editor for creating custom macros and button layouts.</i>
-</div>
 
 ### Application & Media Management
 * **App Launcher:** Add `.exe` executables, `.lnk` shortcuts, or folder/shell paths to the PC dashboard. They instantly show up on your Android device for one-tap remote launching.
@@ -134,7 +125,13 @@ pycryptodome
 
 ## Mod Editor: Custom Macro Deck
 
-The **Mod Editor** is a separate window used to design the button decks ("mods") that appear on your Android app. Open it by clicking the **`MODS`** button in the top-right corner of the main uDesk dashboard.
+The **Mod Editor** is a separate window used to design the button decks ("mods") that appear on your Android app, build entirely on JSON files stored locally. Open it by clicking the **`MODS`** button in the top-right corner of the main uDesk dashboard.
+
+<div align="center">
+  <img src="images/mod_editor.png" alt="Mod Editor Interface" width="750">
+  <br>
+  <i>The built-in editor for creating custom macros and button layouts.</i>
+</div>
 
 ### 1. Creating a mod
 * Click **`+ New Mod`** in the left sidebar to start a blank deck, or select an existing `.json` file from the list to edit it.
