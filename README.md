@@ -32,17 +32,16 @@
 uDesk is a local network bridge between your Windows PC and your Android device, made up of a Windows server app running quietly in your system tray and a companion Android app that turns your phone into a full remote control hub. Together they give you a low-latency wireless touchpad and remote keyboard, live CPU/RAM/network monitoring, per-app audio mixing, two-way clipboard sync, live media playback sync with playback controls, remote app/website launching, screen capture streaming, and a fully customizable JSON-based macro deck (built with the desktop Mod Editor) that shows up as tappable button decks on your phone.
 
 <div align="center">
-  <table>
-    <tr>
-      <td><img src="images/screenshots/0.png" alt="Main Dashboard" width="500"></td>
-      <td><img src="images/screenshots/1.jpg" alt="Mod Editor" width="500"></td>
-      <td><img src="images/screenshots/2.jpg" alt="Action Preview" width="500"></td>
-      <td><img src="images/screenshots/3.jpg" alt="System Tray" width="500"></td>
-      <td><img src="images/screenshots/4.jpg" alt="System Tray" width="500"></td>
-    </tr>
-  </table>
-  <br>
-  <i>Scroll horizontally to see more of the uDesk interface.</i>
+  <img src="images/screenshots/0.png" width="500"><br>
+  <sub>Main Dashboard</sub><br><br>
+  <img src="images/screenshots/1.png" width="500"><br>
+  <sub>Android Homepage</sub><br><br>
+  <img src="images/screenshots/2.png" width="500"><br>
+  <sub>Settings Dialog</sub><br><br>
+  <img src="images/screenshots/3.png" width="500"><br>
+  <sub>uDesk Browser</sub><br><br>
+  <img src="images/screenshots/4.png" width="500"><br>
+  <sub>About uDesk Dialog</sub>
 </div>
 
 ---
