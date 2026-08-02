@@ -34,7 +34,7 @@ uDesk is a local network bridge between your Windows PC and your Android device,
 <div align="center">
   <table>
     <tr>
-      <td><img src="main/images/screenshots/1.png" alt="Main Dashboard" width="500"></td>
+      <td><img src="main/images/screenshots/main_dashboard.png" alt="Main Dashboard" width="500"></td>
       <td><img src="main/images/screenshots/2.png" alt="Mod Editor" width="500"></td>
       <td><img src="main/images/screenshots/3.png" alt="Action Preview" width="500"></td>
       <td><img src="main/images/screenshots/4.png" alt="System Tray" width="500"></td>
