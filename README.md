@@ -27,14 +27,21 @@
 
 ---
 
-## About the Project
+## What's uDesk?
 
-uDesk is a desktop server application built with **Python & PyQt5** that runs quietly in your system tray. Over your local network, it bridges your Windows PC and the uDesk Android app, giving you a live dashboard for hardware monitoring, two-way input control, media/clipboard sync, and a fully customizable JSON-based macro deck.
+uDesk is a powerful desktop server application that acts as a local network bridge between your Windows PC and Android device. Running quietly in your system tray, it transforms your phone into a comprehensive remote control hub. Whether you need a low-latency wireless touchpad, a live system hardware monitor, two-way media and clipboard synchronization, or a fully customizable JSON-based macro deck to launch apps and execute shortcuts, uDesk brings your PC's controls right to your fingertips.
 
 <div align="center">
-  <img src="images/main_dashboard.png" alt="uDesk Main Dashboard" width="750">
+  <table>
+    <tr>
+      <td><img src="main/images/screenshots/1.png" alt="Main Dashboard" width="500"></td>
+      <td><img src="main/images/screenshots/2.png" alt="Mod Editor" width="500"></td>
+      <td><img src="main/images/screenshots/3.png" alt="Action Preview" width="500"></td>
+      <td><img src="main/images/screenshots/4.png" alt="System Tray" width="500"></td>
+    </tr>
+  </table>
   <br>
-  <i>Main dashboard: server IP, security token, media/screenshot preview and app launcher.</i>
+  <i>Scroll horizontally to see more of the uDesk interface.</i>
 </div>
 
 ---
